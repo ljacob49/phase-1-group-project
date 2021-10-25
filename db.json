@@ -1,0 +1,85 @@
+{
+    "location": {
+        "name": "New York",
+        "region": "New York",
+        "country": "United States of America",
+        "lat": 40.71,
+        "lon": -74.01,
+        "tz_id": "America/New_York",
+        "localtime_epoch": 1635198064,
+        "localtime": "2021-10-25 17:41"
+    },
+    "current": {
+        "last_updated_epoch": 1635197400,
+        "last_updated": "2021-10-25 17:30",
+        "temp_f": 71.1,
+        "is_day": 1,
+        "condition": {
+            "text": "Sunny",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+            "code": 1000
+        },
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "cloud": 0,
+        "uv": 6.0
+    },
+    "forecast": {
+        "forecastday": [
+            {
+                "date": "2021-10-25",
+                "date_epoch": 1635120000,
+                "day": {
+                    "avgtemp_f": 66.8,
+                    "totalprecip_mm": 7.8,
+                    "totalprecip_in": 0.31,
+                    "daily_will_it_rain": 1,
+                    "daily_chance_of_rain": 86,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Moderate rain",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/302.png",
+                        "code": 1189
+                    }
+                }
+            },
+            {
+                "date": "2021-10-26",
+                "date_epoch": 1635206400,
+                "day": {
+                    "avgtemp_f": 61.0,
+                    "totalprecip_mm": 252.4,
+                    "totalprecip_in": 9.94,
+                    "daily_will_it_rain": 1,
+                    "daily_chance_of_rain": 94,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Heavy rain",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/308.png",
+                        "code": 1195
+                    }
+                } 
+            },
+            {
+                "date": "2021-10-27",
+                "date_epoch": 1635292800,
+                "day": {
+                    "avgtemp_f": 59.0,
+                    "totalprecip_mm": 5.5,
+                    "totalprecip_in": 0.22,
+                    "daily_will_it_rain": 1,
+                    "daily_chance_of_rain": 86,
+                    "daily_will_it_snow": 0,
+                    "daily_chance_of_snow": 0,
+                    "condition": {
+                        "text": "Moderate rain",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/day/302.png",
+                        "code": 1189
+                    }
+                }
+            }
+        ]
+    }
+}
