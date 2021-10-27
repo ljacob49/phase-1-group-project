@@ -1,19 +1,89 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
-  });
+
+  api = 'http://api.weatherapi.com/v1/forecast.json?key=20c6c008ae4e401998b121207212510%20&q=New%20York%20City&days=5&aqi=no&alerts=no'
+
+  fetch(api)
+      .then(response => response.json())
+      .then(data => {
+          //These three return a number that is the avg temp for the day in question
+          todayTemp = data.forecast.forecastday[0].day.avgtemp_f
+          tomorrowTemp = data.forecast.forecastday[1].day.avgtemp_f
+          theNextDayTemp = data.forecast.forecastday[2].day.avgtemp_f
+         
+          //define variables
+          displayJacket = document.querySelector("#Jacket")//Jacket container
+          hoody = document.createElement('img')// Hoody
+          hoody.src = 'hoody.png'
+          parka = document.createElement('img')//Parka
+          parka.src = 'parka.jpg'
+          tshirt = document.createElement('img')//Tshirt
+          tshirt.src = 'tshirt.png'
+          lightJacket = document.createElement('img')//Light Jacket
+          lightJacket.src = 'leather.png'
+          coat = document.createElement('img')//Coat
+          coat.src = 'wintercoat.png'
+          cold = document.createElement('img')//SnowSuit
+          cold.src = 'extremecold.jpeg'
+          
+          //The function tempZones takes a number as an argument.
+          //It then returns the jacket that coorisponds to the range that the arg fits into.
+          function tempZones(temp) {
+              if (temp > 65) {
+                  return displayJacket.append(tshirt)
+              }
+              if (temp >= 60) {
+                  return displayJacket.append(hoody)
+              }
+              if (temp >= 50) {
+                  return displayJacket.append(lightJacket)
+              }
+              if (temp >= 40) {
+                  return displayJacket.append(coat)
+              }
+              if (temp > 25) {
+                  return displayJacket.append(parka)
+              }
+              else { return displayJacket.append(cold) }
+          }
+          
+        
+              //update Avg Temp Display
+              //default
+              AvgTempDisplay = document.querySelector("#Temp")
+              AvgTempDisplay.innerHTML = `Average ${todayTemp}`
+             tempZones(todayTemp)
+              //tomorrow
+              tomorrow = document.querySelector("body > div.dropdown > div > a:nth-child(1)")
+              tomorrow.addEventListener('click', () => {
+                  AvgTempDisplay.innerHTML = `Average ${tomorrowTemp}`
+                  
+                  tempZones(tomorrowTemp)
+
+              })
+              //the next day
+              tndAvgTemp = document.querySelector("body > div.dropdown > div > a:nth-child(2)")
+              tndAvgTemp.addEventListener('click', () => {
+                  AvgTempDisplay.innerHTML = `Average ${theNextDayTemp}`
+                  tempZones(theNextDayTemp)
+
+              })
+              //reset
+              homeBtn = document.querySelector("body > div.dropdown > button")
+              homeBtn.addEventListener('click', () => {
+                  AvgTempDisplay.innerHTML = `Average ${todayTemp}`
+                  tempZones(tomorrowTemp)
+              })
+             
+
+          
+          
+    
+      
+      })
 
 
-const display = document.querySelector("#Jacket")
-const placeHolder = document.createElement('img')
-placeHolder.src = 'Question-Mark.png'
-display.append(placeHolder)
 
- liker = document.querySelector("#liker")
-
-liker.addEventListener('click', () => {
-    return console.log('test')
-}
-)
 const userJacket = document.getElementById('user-form')
 userJacket.addEventListener('submit', (event) => {
   event.preventDefault()
@@ -25,3 +95,4 @@ userJacket.addEventListener('submit', (event) => {
 
 })
   
+});
