@@ -22,17 +22,17 @@ document.addEventListener("DOMContentLoaded", function() {
               if (temp > 65) {
                   return detailImage.src = 'tshirt.png'
               }
-              if (temp >= 60) {
+              if (temp >= 59) {
                 return detailImage.src = 'hoody.png'
               }
               if (temp >= 50) {
-                return detailImage.src = 'leather.png'
+                return detailImage.src = 'Black-Leather-Jacket-PNG.png'
               }
               if (temp >= 40) {
                   return detailImage.src = 'wintercoat.png'
               }
               if (temp > 25) {
-                  return detailImage.src = 'parka.jpg'
+                  return detailImage.src = 'Jacket-Download-PNG.png'
               }
               else { return detailImage.src = 'extremecold.jpeg' }
           }

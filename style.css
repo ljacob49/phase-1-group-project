@@ -20,14 +20,20 @@ text-shadow: 2px 2px #6f9223;
 position: relative;
 }
 
-
+#Jacket > img {
+  width:15%;
+  height:20%;
+  object-fit:cover;    
+     
+}
 
 #Jacket {
-    height:470px;
-    width: 650px;
 
-    margin-left:100vmin;
-    margin-top: -75px;
+text-align: center;  
+padding: 15px;  
+
+  margin-left:90vmin;
+    margin-top: -70px;
 }
 
 .dropbtn {
@@ -46,7 +52,7 @@ position: relative;
     
     position:unset;
     display:-ms-inline-flexbox;
-    margin-left:40vmin
+    margin-left:42vmin
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -79,7 +85,7 @@ position: relative;
   .dropdown:hover .dropdown-content {display: block;}
 
   #logo {
-    margin-top: -100px;
+    margin-top: -130px;
     margin-left:48vmin;
 font-family:sans-serif;
 color:rgba(211, 192, 22, 0.89);
@@ -90,7 +96,7 @@ text-shadow: 2px 2px #6f9223;
 #Temp {
     position:unset;
     display:-ms-inline-flexbox;
-    margin-left:40vmin;
+    margin-left:42vmin;
     margin-top: 100px;
     font-family:sans-serif
     height:60px;
@@ -120,7 +126,7 @@ text-shadow: 2px 2px #6f9223;
     color: #6f9223;
     text-shadow: 1px rgb(208, 223, 5);
     box-shadow: rgba(109, 219, 82, 0.664);
-    margin-left:39vmin;
+    margin-left:41.5vmin;
     margin-top: -100px;
 
 }
