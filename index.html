@@ -17,29 +17,32 @@
         <div class="dropdown-content">
           <a href="#">Tomorrow!</a>
           <a href="#">The Next Day!</a>
-          <a href="#">The One After That!</a>
+       
         </div>
       </div>
-    <div id=Temp>Temp</div>
-    <div id=Jacket></div>
-    <Button id="liker">♡</Button>
+    <div id=Temp></div>
+    <container id=Jacket>
+      <img class="detail-image" src="Question-Mark.png" alt="" />
+    </container>
     <br>
-    <Button id="fav">Fav Jacket Day!</Button>
+   
     <form action="/my-handling-form-page" method="post" id = "user-form">
-      <ul>
-        <li>
-          <label for="name">Favorite Jacket:</label>
-          <input type="text" id="user-jacket-name" placeholder= "Which is your favorite?">
-        </li>
+      <ol>
        <li>
-         <label for="image">Jacket Image:</label>
+         <label for="image">Upload Your favorite:</label><br>
          <input type="img" id="jacket-img" placeholder="Upload your favorite jacket!" >
        </li>
        <li class="button">
-        <button type="submit">Send your jacket!</button>
+        <button type="submit">Save your jacket!</button>
       </li>
-      </ul>
+      </ol>
      </form>
+     <div class="dropdown">
+      <button class="dropbtn">What Kinda Weather?</button>
+      <div class="dropdown-content" id="upload">
+        <a href="#">crisp</a>
+        <a href="#">chilly</a>
+        <a href="#">cold AF</a>
 <div id="logo">Made With<br><img src="weatherapi_logo.png"></div>
 <script src="index.js"></script>
 </body>

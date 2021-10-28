@@ -12,39 +12,29 @@ document.addEventListener("DOMContentLoaded", function() {
           theNextDayTemp = data.forecast.forecastday[2].day.avgtemp_f
          
           //define variables
-          displayJacket = document.querySelector("#Jacket")//Jacket container
-          hoody = document.createElement('img')// Hoody
-          hoody.src = 'hoody.png'
-          parka = document.createElement('img')//Parka
-          parka.src = 'parka.jpg'
-          tshirt = document.createElement('img')//Tshirt
-          tshirt.src = 'tshirt.png'
-          lightJacket = document.createElement('img')//Light Jacket
-          lightJacket.src = 'leather.png'
-          coat = document.createElement('img')//Coat
-          coat.src = 'wintercoat.png'
-          cold = document.createElement('img')//SnowSuit
-          cold.src = 'extremecold.jpeg'
+          detailImage = document.querySelector("#Jacket > img.detail-image")
+         
           
+          document.querySelector("#Jacket > img:nth-child(1)")
           //The function tempZones takes a number as an argument.
           //It then returns the jacket that coorisponds to the range that the arg fits into.
           function tempZones(temp) {
               if (temp > 65) {
-                  return displayJacket.append(tshirt)
+                  return detailImage.src = 'tshirt.png'
               }
               if (temp >= 60) {
-                  return displayJacket.append(hoody)
+                return detailImage.src = 'hoody.png'
               }
               if (temp >= 50) {
-                  return displayJacket.append(lightJacket)
+                return detailImage.src = 'leather.png'
               }
               if (temp >= 40) {
-                  return displayJacket.append(coat)
+                  return detailImage.src = 'wintercoat.png'
               }
               if (temp > 25) {
-                  return displayJacket.append(parka)
+                  return detailImage.src = 'parka.jpg'
               }
-              else { return displayJacket.append(cold) }
+              else { return detailImage.src = 'extremecold.jpeg' }
           }
           
         

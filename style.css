@@ -17,6 +17,7 @@ font-style:initial;
 color:rgba(211, 192, 22, 0.89);
 margin-top: 140px;
 text-shadow: 2px 2px #6f9223;
+position: relative;
 }
 
 
@@ -24,13 +25,9 @@ text-shadow: 2px 2px #6f9223;
 #Jacket {
     height:470px;
     width: 650px;
-    position:absolute;
-   
-    margin-left:auto;
-    margin-right:auto;
-    
-    margin-left:70vmin;
-    margin-top: -100px;
+
+    margin-left:100vmin;
+    margin-top: -75px;
 }
 
 .dropbtn {
@@ -49,7 +46,7 @@ text-shadow: 2px 2px #6f9223;
     
     position:unset;
     display:-ms-inline-flexbox;
-    margin-left:45vmin
+    margin-left:40vmin
   }
   
   /* Dropdown Content (Hidden by Default) */
@@ -82,8 +79,8 @@ text-shadow: 2px 2px #6f9223;
   .dropdown:hover .dropdown-content {display: block;}
 
   #logo {
-    margin-top: 60px;
-    margin-left:44vmin;
+    margin-top: -100px;
+    margin-left:48vmin;
 font-family:sans-serif;
 color:rgba(211, 192, 22, 0.89);
 font-style:inherit;
@@ -93,25 +90,48 @@ text-shadow: 2px 2px #6f9223;
 #Temp {
     position:unset;
     display:-ms-inline-flexbox;
-    margin-left:44vmin;
-    margin-top: 175px;
+    margin-left:40vmin;
+    margin-top: 100px;
+    font-family:sans-serif
     height:60px;
     width: 95px;
     position:absolute;
-    background-color: #716e72;
-    border: 5px solid rgba(86, 87, 86, 0.329);
+    background-color: #6f9223;
+    border: 1px solid rgba(211, 192, 22, 0.89);
     font-family:sans-serif;
     
 }
 
-
-#liker {
-    margin-left:49vmin;
-    margin-top: 145px;
-}
-  
   
 #fav {
-    margin-left:43.5vmin;
-    margin-top: 83px;
+    margin-left:40vmin;
+    margin-top: 10px;
+}
+
+#user-form {
+  position:absolute;
+  align-items:flex-start;
+    background-color: rgba(11, 12, 10, 0.281);
+    background-blend-mode:luminosity;
+    border: 1px solid rgba(206, 223, 206, 0.034);
+    font-family:sans-serif;
+    font-weight: 700;
+    font-size: large;
+    color: #6f9223;
+    text-shadow: 1px rgb(208, 223, 5);
+    box-shadow: rgba(109, 219, 82, 0.664);
+    margin-left:39vmin;
+    margin-top: -100px;
+
+}
+
+
+
+#upload {
+  font-family: sans-serif;
+  width: 4000px;
+  max-width: 195px;
+  font-size: 20pt;
+  font-weight: 900;
+  
 }
