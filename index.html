@@ -26,23 +26,24 @@
     </container>
     <br>
    
-    <form action="/my-handling-form-page" method="post" id = "user-form">
+    <form  method="post" id = "user-form">
       <ol>
        <li>
          <label for="image">Upload Your favorite:</label><br>
          <input type="img" id="jacket-img" placeholder="Upload your favorite jacket!" >
        </li>
+       <li> <div class="dropdown">
+        <button class="dropbtn">What Kinda Weather?</button>
+        <div class="dropdown-content" id="upload">
+          <a id = 1 href="#">crisp</a>
+          <a id = 2 href="#">chilly</a>
+          <a id = 3 href="#">cold AF</a></li>
        <li class="button">
         <button type="submit">Save your jacket!</button>
       </li>
       </ol>
      </form>
-     <div class="dropdown">
-      <button class="dropbtn">What Kinda Weather?</button>
-      <div class="dropdown-content" id="upload">
-        <a href="#">crisp</a>
-        <a href="#">chilly</a>
-        <a href="#">cold AF</a>
+    
 <div id="logo">Made With<br><img src="weatherapi_logo.png"></div>
 <script src="index.js"></script>
 </body>

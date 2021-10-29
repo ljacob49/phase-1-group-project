@@ -85,8 +85,8 @@ padding: 15px;
   .dropdown:hover .dropdown-content {display: block;}
 
   #logo {
-    margin-top: -130px;
-    margin-left:48vmin;
+    margin-top: 130px;
+    margin-left:130vmin;
 font-family:sans-serif;
 color:rgba(211, 192, 22, 0.89);
 font-style:inherit;
@@ -126,12 +126,14 @@ text-shadow: 2px 2px #6f9223;
     color: #6f9223;
     text-shadow: 1px rgb(208, 223, 5);
     box-shadow: rgba(109, 219, 82, 0.664);
-    margin-left:41.5vmin;
+    margin-left:39vmin;
     margin-top: -100px;
 
 }
 
-
+#user-form > ol > li:nth-child(2) > div {
+  margin-left:1vmin;
+}
 
 #upload {
   font-family: sans-serif;
